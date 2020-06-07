@@ -1,7 +1,7 @@
 ARG PHP_VERSION
 FROM php:${PHP_VERSION}
 
-MAINTAINER Daljeet Singh (d.singh@cynux.com)
+#MAINTAINER Daljeet Singh (d.singh@cynux.com)
 
 ENV COMPOSER_ALLOW_SUPERUSER 1 \
     PHP_XDEBUG_DEFAULT_ENABLE ${PHP_XDEBUG_DEFAULT_ENABLE:-1} \
