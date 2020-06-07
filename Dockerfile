@@ -6,7 +6,7 @@ ENV COMPOSER_ALLOW_SUPERUSER 1
 
 LABEL Maintainer="Daljeet Singh <d.singh@cynux.com>" \
       Description="PHP ${PHP_VERSION} image to run Dusk on GitHub actions." \
-      org.label-schema.name="dsingh/laravel-dusk:${PHP_VERSION}" \
+      org.label-schema.name="cxdsingh/laravel-dusk:${PHP_VERSION}" \
       org.label-schema.description="PHP ${PHP_VERSION} docker image to run Dusk on GitHub actions." \
       org.label-schema.vcs-url="https://github.com/cynux/laravel-dusk" \
       org.label-schema.schema-version="0.5.0"
