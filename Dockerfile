@@ -1,5 +1,5 @@
 ARG PHP_VERSION
-FROM php:${PHP_VERSION}
+FROM php:${PHP_VERSION}-cli
 
 MAINTAINER Daljeet Singh (d.singh@cynux.com)
 
