@@ -1,5 +1,5 @@
 ARG PHP_VERSION
-FROM php:${PHP_VERSION}-cli
+FROM php:${PHP_VERSION}
 
 MAINTAINER Daljeet Singh (d.singh@cynux.com)
 
@@ -31,7 +31,7 @@ RUN apt-get update && apt-get install -y -q --no-install-recommends git libsodiu
     && docker-php-ext-install -j"$(nproc)" pdo pdo_mysql intl zip \
     && apt-get autoremove \
     && rm -rf /var/lib/apt/lists/*
-#
-#COPY conf.d/xdebug.ini /usr/local/etc/php/conf.d/xdebug-dev.ini
-#
-#RUN Xvfb -ac :0 -screen 0 1280x1024x16 &
+
+COPY conf.d/xdebug.ini /usr/local/etc/php/conf.d/xdebug-dev.ini
+
+RUN Xvfb -ac :0 -screen 0 1280x1024x16 &
